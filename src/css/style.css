@@ -3,15 +3,14 @@
 }
 
 body {
-    background-color: #F5F4F5;
+    background-color: #F6F1F1;
     overflow-x: hidden;
 }
 header {
     display: flex;
-    height: 11.1rem;
+    height: 11rem;
     align-items: center;
     justify-content: space-around;
-    box-shadow: .8px 2px 30px -8px #E5E4E2;
 }
 .logo__content {
     display: flex;
@@ -49,4 +48,42 @@ header a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: #111827;
+}
+.banner__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    position: absolute;
+    left: 40rem;
+}
+.banner h2{
+    font-size: 9rem;
+}
+.banner h3{
+    font-size: 4rem;
+}
+.banner p{
+    width: 50rem;
+    word-break: normal;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.banner__text a {
+    width: 35rem;
+    font-size: 3rem;
+    background-color: #111827;
+    border: 1px solid #E5E4E2;
+    color: #E5E4E2;
+    padding: 1.2rem;
+    border-radius: 5rem;
+    text-align: center;
+}
+.banner__text a:hover {
+    background-color: #E5E4E2;
+    color: #111827;
+    border: 1px solid #111827;
 }
