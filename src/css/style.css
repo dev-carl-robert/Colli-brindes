@@ -1,0 +1,52 @@
+:root {
+    font-size: 52.5%;
+}
+
+body {
+    background-color: #F5F4F5;
+    overflow-x: hidden;
+}
+header {
+    display: flex;
+    height: 11.1rem;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: .8px 2px 30px -8px #E5E4E2;
+}
+.logo__content {
+    display: flex;
+    align-items: center;
+    max-height: 8rem;
+}
+.logo__content img{
+    max-width: 12rem;
+    height: 100%;
+    width: 100%;
+}
+.logo__content h1 {
+    color: #111827;
+    font-family: "Cardo";
+    font-size: 3rem;
+}
+header a {
+    font-size: 3rem;
+    border: 1px solid #111827;
+    padding:1.2rem;
+    border-radius: 5rem;
+}
+header a:hover {
+    background-color: #111827;
+    color: #E5E4E2;
+    border: 1px solid #E5E4E2;
+}
+.banner {
+    overflow: hidden;
+    height: 525px;
+    background-image: url(../imagens/Colli\ Brindes.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
