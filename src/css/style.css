@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Asbigan';
+    src: url(../fonts/asbigan-4bvvb.ttf);
+}   
 :root {
     font-size: 52.5%;
 }
@@ -16,11 +20,13 @@
 }
 
 body {
-    background-color: #F6F1F1;
+    background-image: url("../imagens/background.jpg");
     overflow-x: hidden;
+    background-attachment: fixed;
 }
 
 header {
+    background-color: #F4F1F0;
     display: flex;
     height: 11rem;
     align-items: center;
@@ -56,9 +62,11 @@ header a:hover {
     background-color: #111827;
     color: #E5E4E2;
     border: 1px solid #E5E4E2;
+    transition: 2s;
 }
 
 .banner {
+    box-shadow: inset 4px 12px 19px 9px #F4F1F0;
     overflow: hidden;
     height: 505px;
     background-image: url(../imagens/Colli\ Brindes.jpg);
@@ -111,6 +119,7 @@ header a:hover {
     background-color: #E5E4E2;
     color: #111827;
     border: 1px solid #111827;
+    transition: 2s;
 }
 
 #inicio {
@@ -131,7 +140,8 @@ header a:hover {
 .product img {
     max-width: 40rem;
     max-height: 40rem;
-    transition: ease-in-out 5s;
+    transition: ease 5s;
+    filter: drop-shadow(5px 0 20px #111827);
 }
 
 .product h2 {
@@ -149,7 +159,7 @@ header a:hover {
     font-family: "Cinzel decorative";
 }
 
-.catalogo .division__detail {
+.division__detail {
     background-color: #111827;
     border-radius: 1rem;
     width: .5rem;
@@ -159,9 +169,14 @@ header a:hover {
     left: 50%;
 }
 
+.divisao {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 6rem;
+}
 
 .Maps {
-    margin-top: 4rem;
+    margin-top: 2rem;
     display: flex;
     max-width: 100vw;
     overflow: hidden;
@@ -169,6 +184,7 @@ header a:hover {
     align-items: center;
     gap: 20rem;
 }
+
 .apresentation {
     display: flex;
     height: 535px;
@@ -197,10 +213,76 @@ header a:hover {
     letter-spacing: 4px;
     font-weight: 700;
 }
+
 .mapa {
     width: 50rem;
     position: relative;
     height: 50rem;
-    border: 4px solid #0D141F ;
+    border: 4px solid #0D141F;
     border-radius: 1rem;
+}
+
+#orçamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    justify-content: center;
+    width: 100vw;
+    min-height: 535px;
+}
+.product_orcamento {
+    gap: 2rem;
+
+}
+#orçamento h2 {
+    color: #970C10;
+    text-align: center;
+    font-family: "Asbigan";
+    font-size: 5rem;
+    width: 100vw;
+    text-align: center;
+    font-weight: 700;
+}
+#orçamento .alinhar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#orçamento .product_orcamento {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 35vw;
+    max-height: 70rem;
+}
+#orçamento img {
+    width: 20rem;
+}
+.text_orcamento {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.text_orcamento img {
+    height: 100%;
+}
+#orçamento .social {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 4rem;
+    color: #1D434E;
+    border: 2px solid #0D141F;
+    padding: 2rem;
+    border-radius: 5rem; 
+    cursor: pointer;
+}
+#orçamento .social:hover {
+    background-color: #111827;
+    color: #E5E4E2;
+    transition: 2s ;
 }
