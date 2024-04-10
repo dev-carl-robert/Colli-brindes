@@ -1,7 +1,8 @@
 @font-face {
     font-family: 'Asbigan';
-    src: url(../fonts/asbigan-4bvvb.ttf);
-}   
+    src: url(../../fonts/asbigan-4bvvb.ttf);
+}
+
 :root {
     font-size: 52.5%;
 }
@@ -132,16 +133,20 @@ header a:hover {
     position: relative;
 }
 
+.catalogo .display {
+    display: flex;
+}
+
 .product {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .product img {
     max-width: 40rem;
     max-height: 40rem;
-    transition: ease 5s;
-    filter: drop-shadow(5px 0 20px #111827);
+    filter: drop-shadow(5px 0 20px rgba(10, 24, 20, .8));
 }
 
 .product h2 {
@@ -159,20 +164,21 @@ header a:hover {
     font-family: "Cinzel decorative";
 }
 
-.division__detail {
-    background-color: #111827;
-    border-radius: 1rem;
-    width: .5rem;
-    height: 100%;
-    position: absolute;
-    top: 1rem;
-    left: 50%;
+.divisao {
+    background-image: url("../imagens/divisao_estilizada.png");
+    margin-top: 6rem;
+    width: 100vw;
+    height: 2rem;
+    background-position: center;
 }
 
-.divisao {
-    display: flex;
-    flex-wrap: nowrap;
+.divisao__responsive {
+    background-image: url("../imagens/divisao_estilizada.png");
     margin-top: 6rem;
+    display: none;
+    width: 100vw;
+    height: 2rem;
+    background-position: center;
 }
 
 .Maps {
@@ -196,12 +202,12 @@ header a:hover {
 
 .apresentation h2 {
     color: #970C10;
-    font-family: "Cinzel decorative";
+    font-family: "Asbigan";
     font-size: 4rem;
     width: 70rem;
     text-align: center;
     font-weight: 700;
-    letter-spacing: .5rem;
+    /* letter-spacing: .5rem; */
 }
 
 .apresentation p {
@@ -231,10 +237,12 @@ header a:hover {
     width: 100vw;
     min-height: 535px;
 }
+
 .product_orcamento {
     gap: 2rem;
 
 }
+
 #orçamento h2 {
     color: #970C10;
     text-align: center;
@@ -244,6 +252,7 @@ header a:hover {
     text-align: center;
     font-weight: 700;
 }
+
 #orçamento .alinhar {
     display: flex;
     justify-content: center;
@@ -257,9 +266,11 @@ header a:hover {
     width: 35vw;
     max-height: 70rem;
 }
+
 #orçamento img {
     width: 20rem;
 }
+
 .text_orcamento {
     width: 35vw;
     display: flex;
@@ -267,9 +278,11 @@ header a:hover {
     gap: 2rem;
     align-items: center;
 }
+
 .text_orcamento img {
     height: 100%;
 }
+
 #orçamento .social {
     display: flex;
     justify-content: center;
@@ -278,11 +291,12 @@ header a:hover {
     color: #1D434E;
     border: 2px solid #0D141F;
     padding: 2rem;
-    border-radius: 5rem; 
+    border-radius: 5rem;
     cursor: pointer;
 }
+
 #orçamento .social:hover {
     background-color: #111827;
     color: #E5E4E2;
-    transition: 2s ;
+    transition: 2s;
 }

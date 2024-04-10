@@ -1,0 +1,125 @@
+@media (width <=576px) {
+    body {
+        max-width: 576px;
+        overflow-x: hidden;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    header a {
+        padding: 5px;
+    }
+
+    .banner {
+        background-position: center;
+    }
+
+    .banner__text {
+        position: static;
+        text-align: center;
+    }
+
+    .banner__text h2 {
+        font-size: 50px;
+    }
+
+    .banner__text h3 {
+        font-size: 25px;
+    }
+
+    .banner__text a {
+        font-size: 24px;
+    }
+
+    .divisao__responsive {
+        display: block;
+        overflow-x: hidden;
+    }
+
+    .catalogo {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .catalogo .display {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product {
+        margin-top: 50px;
+    }
+
+    .product img {
+        max-width: 250px;
+    }
+
+    .product h2 {
+        margin-left: -20px;
+        width: 175px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .product p {
+        margin-left: -20px;
+        text-align: center;
+        margin-right: 10px;
+        font-size: 15px;
+        width: 175px;
+    }
+
+
+    .divisao__responsive {
+        display: block;
+        width: 390px;
+
+    }
+
+    .Maps {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .apresentation h2 {
+        width: 400px;
+        font-size: 30px;
+    }
+
+    .apresentation p {
+        width: 400px;
+    }
+    .divisao {
+        width: 390px;
+    }
+    .mapa {
+        max-width: 350px;
+        height: 350px;
+    }
+
+    #orçamento .product_orcamento {
+        display: flex;
+        gap: 30px;
+    }
+
+    .text_orcamento {
+        margin-top: 30px;
+    }
+
+    #orçamento .alinhar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #orçamento .social {
+        width: 350px;
+        margin-bottom: 30px;
+    }
+}
