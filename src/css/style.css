@@ -33,7 +33,6 @@ header {
     align-items: center;
     justify-content: space-around;
 }
-
 .logo__content {
     display: flex;
     align-items: center;
@@ -48,7 +47,8 @@ header {
 
 .logo__content h1 {
     color: #111827;
-    font-family: "Cardo";
+    font-family: "Cinzel decorative";
+    letter-spacing: 4px;
     font-size: 3rem;
 }
 
